@@ -15,10 +15,13 @@ export const routes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/workbench',
+    redirect: '/workbench'
+  },
+  {
+    path: '/workbench',
+    component: Layout,
     children: [{
-      path: '/workbench',
-      name: 'workbench',
+      path: '',
       component: () => import('@/views/Workbench/index'),
       meta: { title: '工作台', icon: 'el-icon-eleme' }
     }]
@@ -26,18 +29,18 @@ export const routes = [
   {
     path: '/park',
     component: Layout,
-    name: 'park',
+    permission: 'park',
     meta: { title: '园区管理', icon: 'el-icon-office-building' },
     children: [{
-      path: '/building',
-      name: 'building',
+      path: 'building',
       meta: { title: '楼宇管理' },
+      permission: 'building',
       component: () => import('@/views/park/building/index')
     },
     {
-      path: '/enterprise',
-      name: 'enterprise',
+      path: 'enterprise',
       meta: { title: '企业管理' },
+      permission: 'enterprise',
       component: () => import('@/views/park/enterprise/index')
     }]
   },

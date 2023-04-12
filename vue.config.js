@@ -5,8 +5,6 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const port = process.env.port || 8081 // dev port
-
 module.exports = {
   publicPath: './',
   outputDir: 'dist',
@@ -15,7 +13,6 @@ module.exports = {
   productionSourceMap: false,
   // 配置代理转发
   devServer: {
-    port: port,
     open: true,
     overlay: {
       warnings: false,
