@@ -11,6 +11,9 @@ import store from './store'
 
 import router from './router'
 
+// 注册svg
+import '@/icons'
+
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false
