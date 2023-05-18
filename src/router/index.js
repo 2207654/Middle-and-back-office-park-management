@@ -23,7 +23,7 @@ export const routes = [
     children: [{
       path: '',
       component: () => import('@/views/Workbench/index'),
-      meta: { title: '工作台', icon: 'el-icon-eleme' }
+      meta: { title: '工作台', icon: 'el-icon-data-board' }
     }]
   },
   {
