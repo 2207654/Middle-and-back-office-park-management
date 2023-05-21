@@ -33,9 +33,11 @@ export default {
     .main-container{
       background-color: #f4f6f8;
       flex:1;
+      min-width: 820px;
     }
     .sidebar-container{
       width: 260px;
+      min-width: 260px;
     }
   }
 
