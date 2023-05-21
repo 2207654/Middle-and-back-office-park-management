@@ -35,13 +35,13 @@ export const routes = [
       path: 'building',
       meta: { title: '楼宇管理' },
       permission: 'building',
-      component: () => import('@/views/park/building/index')
+      component: () => import('@/views/Park/Building/index')
     },
     {
       path: 'enterprise',
       meta: { title: '企业管理' },
       permission: 'enterprise',
-      component: () => import('@/views/park/enterprise/index')
+      component: () => import('@/views/Park/Enterprise/index')
     }]
   },
   {
