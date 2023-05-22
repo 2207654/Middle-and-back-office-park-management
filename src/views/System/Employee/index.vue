@@ -1,14 +1,15 @@
 <template>
-  <div class="enterprise-container">
-    企业管理
+  <div class="employee-container">
+    员工管理
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Building'
+  name: 'Employee'
 }
 </script>
 
 <style lang="scss" scoped>
+
 </style>

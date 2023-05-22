@@ -3,24 +3,23 @@
     <div class="bg" />
     <div class="box">
       <div class="title">智慧园区-登录</div>
-      <el-form>
+      <el-form ref="form">
         <el-form-item
           label="账号"
-          name="username"
+          prop="username"
         >
           <el-input />
         </el-form-item>
 
         <el-form-item
           label="密码"
-          name="password"
+          prop="password"
         >
           <el-input />
         </el-form-item>
 
-        <el-form-item name="remember">
-          <el-checkbox>记住我
-          </el-checkbox>
+        <el-form-item prop="remember">
+          <el-checkbox>记住我</el-checkbox>
         </el-form-item>
 
         <el-form-item>
@@ -32,6 +31,11 @@
 </template>
 
 <script>
+
+export default {
+  name: 'Login'
+
+}
 
 </script>
 
