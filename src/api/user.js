@@ -6,9 +6,9 @@ import request from '@/utils/request'
  * @param {*} data { mobile,password}
  * @return {*} promise
  */
-export function login(data) {
+export function loginAPI(data) {
   return request({
-    url: '/sys/login',
+    url: '/park/login',
     method: 'POST',
     data
   })
